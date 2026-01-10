@@ -240,7 +240,6 @@ export default function Index() {
               <ul className="space-y-2 text-sm">
                 <li><a href="#features" className="hover:text-purple-400 transition">Features</a></li>
                 <li><a href="#how-it-works" className="hover:text-purple-400 transition">How It Works</a></li>
-                <li><a href="#pricing" className="hover:text-purple-400 transition">Pricing</a></li>
               </ul>
             </div>
             <div>
