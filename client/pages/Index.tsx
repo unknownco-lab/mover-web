@@ -1,7 +1,7 @@
 import { ArrowRight, Activity, Zap, Settings, Smartphone } from "lucide-react";
 
 export default function Index() {
-  const stripeCheckoutUrl = "https://checkout.stripe.com"; // Replace with your actual Stripe checkout URL
+  const stripeCheckoutUrl = "https://buy.stripe.com/test_5kQ8wP5ZwgNm1e2eUe5Vu00"; // Replace with your actual Stripe checkout URL
 
   return (
     <div className="min-h-screen bg-white">
