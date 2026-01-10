@@ -182,7 +182,7 @@ export default function Index() {
             <div className="mb-8">
               <p className="text-gray-600 mb-4">Lifetime License</p>
               <p className="text-5xl font-bold text-gray-900 mb-4">
-                $9.99
+                $4.99
                 <span className="text-lg text-gray-600 font-normal"> USD</span>
               </p>
               <p className="text-gray-600 mb-8">One-time payment. Keep Mover forever.</p>
