@@ -50,6 +50,7 @@ export default function Index() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <a
               href={stripeCheckoutUrl}
+              target="_blank"
               className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white px-8 py-4 rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg"
             >
               Get Mover Now
@@ -209,6 +210,7 @@ export default function Index() {
 
             <a
               href={stripeCheckoutUrl}
+              target="_blank"
               className="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white px-8 py-4 rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg"
             >
               Purchase Now
