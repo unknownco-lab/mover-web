@@ -2,7 +2,8 @@ import { ArrowRight, Activity, Zap, Settings, Smartphone } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function Index() {
-  const stripeCheckoutUrl = "https://buy.stripe.com/test_5kQ8wP5ZwgNm1e2eUe5Vu00"; // Replace with your actual Stripe checkout URL
+  const stripeCheckoutUrl =
+    "https://buy.stripe.com/test_5kQ8wP5ZwgNm1e2eUe5Vu00"; // Replace with your actual Stripe checkout URL
 
   return (
     <div className="min-h-screen bg-white">
@@ -16,13 +17,22 @@ export default function Index() {
             <span className="text-xl font-bold text-gray-900">Mover</span>
           </div>
           <nav className="hidden md:flex items-center gap-8">
-            <a href="#features" className="text-gray-700 hover:text-purple-600 transition">
+            <a
+              href="#features"
+              className="text-gray-700 hover:text-purple-600 transition"
+            >
               Features
             </a>
-            <a href="#how-it-works" className="text-gray-700 hover:text-purple-600 transition">
+            <a
+              href="#how-it-works"
+              className="text-gray-700 hover:text-purple-600 transition"
+            >
               How It Works
             </a>
-            <a href="#pricing" className="text-gray-700 hover:text-purple-600 transition">
+            <a
+              href="#pricing"
+              className="text-gray-700 hover:text-purple-600 transition"
+            >
               Pricing
             </a>
           </nav>
@@ -40,15 +50,27 @@ export default function Index() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-purple-500"></span>
             </div>
-            <span className="text-sm font-medium">Keep your system active, always</span>
+            <span className="text-sm font-medium">
+              Keep your system active, always
+            </span>
           </div>
 
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            Never Let Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-purple-500">System Sleep</span> Again
+            Never Let Your{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-purple-500">
+              System Sleep
+            </span>{" "}
+            Again
           </h1>
 
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Mover is a lightweight application that keeps your system active with natural, configurable movement patterns. Perfect for presentations, long work sessions, or <span className="font-bold">when you need your PC to stay responsive</span>.
+            Mover is a lightweight application that keeps your system active
+            with natural, configurable movement patterns. Perfect for
+            presentations, long work sessions, or{" "}
+            <span className="font-bold">
+              when you need your PC to stay responsive
+            </span>
+            .
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -61,7 +83,11 @@ export default function Index() {
               <ArrowRight className="w-5 h-5" />
             </a>
             <button
-              onClick={() => document.getElementById("features")?.scrollIntoView({ behavior: "smooth" })}
+              onClick={() =>
+                document
+                  .getElementById("features")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
               className="inline-flex items-center justify-center gap-2 bg-purple-100 hover:bg-purple-200 text-purple-700 px-8 py-4 rounded-lg font-semibold transition-all"
             >
               Learn More
@@ -89,8 +115,12 @@ export default function Index() {
       <section id="features" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Powerful Features</h2>
-            <p className="text-xl text-gray-600">Everything you need to keep your system active</p>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Powerful Features
+            </h2>
+            <p className="text-xl text-gray-600">
+              Everything you need to keep your system active
+            </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -98,43 +128,73 @@ export default function Index() {
               <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
                 <Zap className="w-6 h-6 text-purple-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Configurable Movement Patterns</h3>
-              <p className="text-gray-600">Choose from multiple movement patterns including random movement, circular motion, and custom patterns. Adjust the frequency and distance to match your needs.</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                Configurable Movement Patterns
+              </h3>
+              <p className="text-gray-600">
+                Choose from multiple movement patterns including random
+                movement, circular motion, and custom patterns. Adjust the
+                frequency and distance to match your needs.
+              </p>
             </div>
 
             <div className="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
               <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
                 <Settings className="w-6 h-6 text-purple-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Easy Configuration</h3>
-              <p className="text-gray-600">Intuitive settings panel to customize movement intervals, distances, and patterns. Start with one click and adjust on the fly.</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                Easy Configuration
+              </h3>
+              <p className="text-gray-600">
+                Intuitive settings panel to customize movement intervals,
+                distances, and patterns. Start with one click and adjust on the
+                fly.
+              </p>
             </div>
 
             <div className="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
               <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
                 <Activity className="w-6 h-6 text-purple-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">System Status Indicator</h3>
-              <p className="text-gray-600">Real-time status indicator shows when Mover is active. See movement interval, distance, and pattern configuration at a glance.</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                System Status Indicator
+              </h3>
+              <p className="text-gray-600">
+                Real-time status indicator shows when Mover is active. See
+                movement interval, distance, and pattern configuration at a
+                glance.
+              </p>
             </div>
 
             <div className="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
               <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
                 <Smartphone className="w-6 h-6 text-purple-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Lightweight & Unobtrusive</h3>
-              <p className="text-gray-600">Minimal system resource usage. Runs quietly in the background without interfering with your work or gaming.</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                Lightweight & Unobtrusive
+              </h3>
+              <p className="text-gray-600">
+                Minimal system resource usage. Runs quietly in the background
+                without interfering with your work or gaming.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
       {/* How It Works Section */}
-      <section id="how-it-works" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section
+        id="how-it-works"
+        className="py-20 px-4 sm:px-6 lg:px-8 bg-white"
+      >
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">How Mover Works</h2>
-            <p className="text-xl text-gray-600">Get started in three simple steps</p>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              How Mover Works
+            </h2>
+            <p className="text-xl text-gray-600">
+              Get started in three simple steps
+            </p>
           </div>
 
           <div className="space-y-8">
@@ -145,8 +205,13 @@ export default function Index() {
                 </div>
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Download & Install</h3>
-                <p className="text-lg text-gray-600">Get Mover from our secure checkout. Installation takes less than a minute on Windows, macOS, or Linux.</p>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                  Download & Install
+                </h3>
+                <p className="text-lg text-gray-600">
+                  Get Mover from our secure checkout. Installation takes less
+                  than a minute on Windows, macOS, or Linux.
+                </p>
               </div>
             </div>
 
@@ -157,8 +222,14 @@ export default function Index() {
                 </div>
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Configure Your Settings</h3>
-                <p className="text-lg text-gray-600">Choose your preferred movement pattern, set the interval (1s to 60s), and adjust the distance (10px to 200px). Or use the default settings for immediate protection.</p>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                  Configure Your Settings
+                </h3>
+                <p className="text-lg text-gray-600">
+                  Choose your preferred movement pattern, set the interval (1s
+                  to 60s), and adjust the distance (10px to 200px). Or use the
+                  default settings for immediate protection.
+                </p>
               </div>
             </div>
 
@@ -169,8 +240,14 @@ export default function Index() {
                 </div>
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Click Start & Relax</h3>
-                <p className="text-lg text-gray-600">Hit the "Start Mover" button and your system will automatically stay active. No more sleep mode interruptions during important moments.</p>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                  Click Start & Relax
+                </h3>
+                <p className="text-lg text-gray-600">
+                  Hit the "Start Mover" button and your system will
+                  automatically stay active. No more sleep mode interruptions
+                  during important moments.
+                </p>
               </div>
             </div>
           </div>
@@ -178,10 +255,17 @@ export default function Index() {
       </section>
 
       {/* Pricing/CTA Section */}
-      <section id="pricing" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-purple-50 to-purple-100">
+      <section
+        id="pricing"
+        className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-purple-50 to-purple-100"
+      >
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Get Mover Today</h2>
-          <p className="text-xl text-gray-600 mb-8">One-time purchase. Own it forever. No subscriptions.</p>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            Get Mover Today
+          </h2>
+          <p className="text-xl text-gray-600 mb-8">
+            One-time purchase. Own it forever. No subscriptions.
+          </p>
 
           <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 border-2 border-purple-200">
             <div className="mb-8">
@@ -190,7 +274,9 @@ export default function Index() {
                 $4.99
                 <span className="text-lg text-gray-600 font-normal"> USD</span>
               </p>
-              <p className="text-gray-600 mb-8">One-time payment. Keep Mover forever.</p>
+              <p className="text-gray-600 mb-8">
+                One-time payment. Keep Mover forever.
+              </p>
             </div>
 
             <div className="space-y-3 mb-8 text-left">
@@ -200,15 +286,21 @@ export default function Index() {
               </div>
               <div className="flex items-center gap-3">
                 <span className="text-purple-600 font-bold">✓</span>
-                <span className="text-gray-700">All movement patterns included</span>
+                <span className="text-gray-700">
+                  All movement patterns included
+                </span>
               </div>
               <div className="flex items-center gap-3">
                 <span className="text-purple-600 font-bold">✓</span>
-                <span className="text-gray-700">Unlimited usage, no limits</span>
+                <span className="text-gray-700">
+                  Unlimited usage, no limits
+                </span>
               </div>
               <div className="flex items-center gap-3">
                 <span className="text-purple-600 font-bold">✓</span>
-                <span className="text-gray-700">Windows, macOS & Linux support</span>
+                <span className="text-gray-700">
+                  Windows, macOS & Linux support
+                </span>
               </div>
             </div>
 
@@ -239,26 +331,60 @@ export default function Index() {
                 </div>
                 <span className="text-xl font-bold text-white">Mover</span>
               </div>
-              <p className="text-sm">Keep your system active with intelligent movement.</p>
+              <p className="text-sm">
+                Keep your system active with intelligent movement.
+              </p>
             </div>
             <div>
               <h4 className="text-white font-semibold mb-4">Product</h4>
               <ul className="space-y-2 text-sm">
-                <li><a href="#features" className="hover:text-purple-400 transition">Features</a></li>
-                <li><a href="#how-it-works" className="hover:text-purple-400 transition">How It Works</a></li>
+                <li>
+                  <a
+                    href="#features"
+                    className="hover:text-purple-400 transition"
+                  >
+                    Features
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#how-it-works"
+                    className="hover:text-purple-400 transition"
+                  >
+                    How It Works
+                  </a>
+                </li>
               </ul>
             </div>
             <div>
               <h4 className="text-white font-semibold mb-4">Support</h4>
               <ul className="space-y-2 text-sm">
-                <li><a href="mailto:i.am.unknownco@gmail.com" className="hover:text-purple-400 transition">Email Support</a></li>
-                <li><a href="/faq" className="hover:text-purple-400 transition">FAQ</a></li>
+                <li>
+                  <a
+                    href="mailto:i.am.unknownco@gmail.com"
+                    className="hover:text-purple-400 transition"
+                  >
+                    Email Support
+                  </a>
+                </li>
+                <li>
+                  <a href="/faq" className="hover:text-purple-400 transition">
+                    FAQ
+                  </a>
+                </li>
               </ul>
             </div>
             <div>
               <h4 className="text-white font-semibold mb-4">Legal</h4>
               <ul className="space-y-2 text-sm">
-                <li><Link to="/terms" className="hover:text-purple-400 transition">Terms of Service</Link></li>
+                <li>
+                  <Link
+                    to="/terms"
+                    className="hover:text-purple-400 transition"
+                  >
+                    Terms of Service
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
