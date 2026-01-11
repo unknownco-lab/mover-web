@@ -1,20 +1,31 @@
 import { createRoot } from "react-dom/client";
 import { App } from "./App";
 
-let root: ReturnType<typeof createRoot> | null = null;
-
-const rootElement = document.getElementById("root");
-
-if (rootElement) {
-  if (!root) {
-    root = createRoot(rootElement);
+declare global {
+  interface Window {
+    __REACT_ROOT__?: ReturnType<typeof createRoot>;
   }
-  root.render(<App />);
 }
 
+function mountApp() {
+  const rootElement = document.getElementById("root");
+
+  if (!rootElement) return;
+
+  // Create root only once
+  if (!window.__REACT_ROOT__) {
+    window.__REACT_ROOT__ = createRoot(rootElement);
+  }
+
+  window.__REACT_ROOT__.render(<App />);
+}
+
+// Mount on initial load
+mountApp();
+
+// Handle HMR updates
 if (import.meta.hot) {
-  import.meta.hot.dispose(() => {
-    root?.unmount();
-    root = null;
+  import.meta.hot.accept("./App", () => {
+    mountApp();
   });
 }
