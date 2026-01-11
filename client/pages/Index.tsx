@@ -252,7 +252,7 @@ export default function Index() {
               <h4 className="text-white font-semibold mb-4">Support</h4>
               <ul className="space-y-2 text-sm">
                 <li><a href="mailto:i.am.unknownco@gmail.com" className="hover:text-purple-400 transition">Email Support</a></li>
-                <li><a href="#faq" className="hover:text-purple-400 transition">FAQ</a></li>
+                <li><a href="/faq" className="hover:text-purple-400 transition">FAQ</a></li>
               </ul>
             </div>
             <div>
