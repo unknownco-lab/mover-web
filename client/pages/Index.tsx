@@ -262,7 +262,7 @@ export default function Index() {
 
           <div className="border-t border-gray-800 pt-8">
             <p className="text-center text-sm text-gray-500">
-              © 2024 Mover. All rights reserved. | Made with{" "}
+              © 2026 Mover. All rights reserved. | Made with{" "}
               <span className="text-purple-400">♥</span>
             </p>
           </div>
