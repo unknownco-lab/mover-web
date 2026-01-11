@@ -44,7 +44,7 @@ export default function Index() {
           </h1>
 
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Mover is a lightweight application that keeps your system active with natural, configurable movement patterns. Perfect for presentations, long work sessions, or when you need your PC to stay responsive.
+            Mover is a lightweight application that keeps your system active with natural, configurable movement patterns. Perfect for presentations, long work sessions, or <span className="font-bold">when you need your PC to stay responsive</span>.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
