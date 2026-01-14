@@ -254,6 +254,157 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Mover vs Hardware Jigglers Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Why Choose Mover Over Hardware Jigglers?
+            </h2>
+            <p className="text-xl text-gray-600">
+              Smart software beats physical devices every time
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            {/* Mover Column */}
+            <div className="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow border-2 border-purple-200">
+              <h3 className="text-2xl font-bold text-purple-600 mb-6 flex items-center gap-2">
+                <span className="text-2xl">✓</span> Mover (Software)
+              </h3>
+              <ul className="space-y-4">
+                <li className="flex gap-3">
+                  <span className="text-purple-600 font-bold flex-shrink-0 mt-1">
+                    •
+                  </span>
+                  <span className="text-gray-700">
+                    <strong>Undetectable:</strong> Operates entirely within your
+                    OS, leaving no trace of connected devices
+                  </span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-purple-600 font-bold flex-shrink-0 mt-1">
+                    •
+                  </span>
+                  <span className="text-gray-700">
+                    <strong>Silent Operation:</strong> No physical devices to
+                    discover or monitor
+                  </span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-purple-600 font-bold flex-shrink-0 mt-1">
+                    •
+                  </span>
+                  <span className="text-gray-700">
+                    <strong>Customizable:</strong> Adjust patterns and timing on
+                    the fly for your specific needs
+                  </span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-purple-600 font-bold flex-shrink-0 mt-1">
+                    •
+                  </span>
+                  <span className="text-gray-700">
+                    <strong>Cross-Platform:</strong> Works on Windows, macOS,
+                    and Linux seamlessly
+                  </span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-purple-600 font-bold flex-shrink-0 mt-1">
+                    •
+                  </span>
+                  <span className="text-gray-700">
+                    <strong>Zero Hardware Cost:</strong> No additional equipment
+                    or devices needed
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Hardware Jigglers Column */}
+            <div className="bg-gray-100 rounded-xl p-8 shadow-sm border-2 border-gray-300">
+              <h3 className="text-2xl font-bold text-gray-600 mb-6 flex items-center gap-2">
+                <span className="text-2xl">✗</span> Hardware Jigglers
+              </h3>
+              <ul className="space-y-4">
+                <li className="flex gap-3">
+                  <span className="text-gray-500 font-bold flex-shrink-0 mt-1">
+                    •
+                  </span>
+                  <span className="text-gray-600">
+                    <strong>Easily Detected:</strong> Software can scan for
+                    connected USB or wireless devices
+                  </span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-gray-500 font-bold flex-shrink-0 mt-1">
+                    •
+                  </span>
+                  <span className="text-gray-600">
+                    <strong>Physical Presence:</strong> Devices are visible and
+                    can be audited
+                  </span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-gray-500 font-bold flex-shrink-0 mt-1">
+                    •
+                  </span>
+                  <span className="text-gray-600">
+                    <strong>Limited Flexibility:</strong> Fixed movement
+                    patterns and timing
+                  </span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-gray-500 font-bold flex-shrink-0 mt-1">
+                    •
+                  </span>
+                  <span className="text-gray-600">
+                    <strong>Platform-Specific:</strong> Different devices needed
+                    for different systems
+                  </span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-gray-500 font-bold flex-shrink-0 mt-1">
+                    •
+                  </span>
+                  <span className="text-gray-600">
+                    <strong>Hardware Costs:</strong> Multiple devices for
+                    multiple systems
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="bg-purple-50 rounded-xl p-8 border border-purple-200">
+            <p className="text-lg text-gray-700 text-center mb-6">
+              Modern security tools scan for connected devices as a standard
+              practice.
+              <span className="font-bold text-purple-700">
+                {" "}
+                Hardware jigglers leave a digital footprint that can be
+                detected.
+              </span>{" "}
+              Mover operates entirely within your operating system, leaving no
+              device to discover.
+            </p>
+            <div className="text-center">
+              <button
+                onClick={() =>
+                  document
+                    .getElementById("pricing")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }
+                className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white px-8 py-4 rounded-lg font-semibold transition-all transform hover:scale-105"
+              >
+                Ready to Switch to Mover?
+                <ArrowRight className="w-5 h-5" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Pricing/CTA Section */}
       <section
         id="pricing"

@@ -185,9 +185,6 @@ export default function FAQ() {
                   <strong>Distance</strong> - Control movement radius from
                   10-500 pixels
                 </li>
-                <li>
-                  <strong>Speed</strong> - Adjust how quickly the cursor moves
-                </li>
               </ul>
             </div>
 
@@ -403,6 +400,43 @@ export default function FAQ() {
                 activity. We strongly recommend using Mover only for legitimate
                 purposes and in compliance with workplace policies.
               </p>
+            </div>
+
+            <div className="mb-8">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">
+                How is Mover different from a physical mouse jiggler?
+              </h3>
+              <p className="text-gray-700 leading-relaxed mb-3">
+                Mover is fundamentally different from physical mouse jiggler
+                devices in several important ways:
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-gray-700 ml-2">
+                <li>
+                  <strong>No hardware detection</strong> - Physical mouse
+                  jigglers are USB or Bluetooth devices that can be easily
+                  detected by IT departments using device management software
+                  that scans for connected hardware. Mover is pure software, so
+                  it doesn't show up in device lists or hardware inventories.
+                </li>
+                <li>
+                  <strong>Natural movement patterns</strong> - Hardware mouse
+                  jigglers often produce repetitive, mechanical movements that
+                  are easy to spot. Mover simulates natural, varied mouse
+                  movement patterns that closely resemble actual human behavior.
+                </li>
+                <li>
+                  <strong>Customizable behavior</strong> - Unlike fixed-pattern
+                  hardware devices, Mover allows you to customize movement
+                  patterns, intervals, and distances to match your specific
+                  needs and preferences.
+                </li>
+                <li>
+                  <strong>No physical evidence</strong> - Physical mouse
+                  jigglers require you to connect a device to your computer,
+                  which can be discovered by IT staff, security cameras, or
+                  during in-person visits. Mover operates entirely in software.
+                </li>
+              </ul>
             </div>
           </section>
 
