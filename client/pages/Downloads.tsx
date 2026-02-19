@@ -100,14 +100,14 @@ export default function Downloads() {
             <div className="space-y-3">
               <div>
                 <Link
-                  to="/macos-instructions"
+                  to="/instructions"
                   className="text-purple-600 hover:text-purple-700 font-semibold inline-flex items-center gap-2"
                 >
-                  macOS Mouse Control Setup
+                  Platform Setup Guide
                   <ArrowRight className="w-4 h-4" />
                 </Link>
                 <p className="text-sm text-gray-600 mt-1">
-                  Step-by-step guide to enable mouse permissions on macOS
+                  Step-by-step setup for macOS and Windows
                 </p>
               </div>
               <div>

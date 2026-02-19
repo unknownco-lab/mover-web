@@ -14,14 +14,11 @@ export default function MacOSInstructions() {
 
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            Enable Mouse Control on{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-purple-500">
-              macOS
-            </span>
+            Platform Setup Guide
           </h1>
 
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Follow these simple steps to grant Mover permission to control your mouse on macOS
+            Choose your operating system to get started with Mover
           </p>
         </div>
       </section>
@@ -44,6 +41,7 @@ export default function MacOSInstructions() {
             </div>
           </div>
 
+          {/* Indie Developer Note */}
           <div className="bg-amber-50 border border-amber-200 rounded-xl p-8 mb-12">
             <div className="flex gap-4">
               <AlertCircle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
@@ -243,7 +241,7 @@ export default function MacOSInstructions() {
                   This might happen on very new macOS versions. Look for "App Management" or "Accessibility"
                   in the Privacy & Security settings. If you're still having issues,{" "}
                   <a
-                    href="mailto:support@usemover.com"
+                    href="mailto:i.am.unknownco@gmail.com"
                     className="text-purple-600 hover:text-purple-700 font-semibold"
                   >
                     contact our support team
@@ -263,6 +261,206 @@ export default function MacOSInstructions() {
             </div>
           </div>
 
+          {/* Windows Section */}
+          <div className="mt-20 pt-20 border-t-2 border-gray-200">
+            <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center">
+              Windows Setup
+            </h2>
+
+            {/* Windows Important Note */}
+            <div className="bg-blue-50 border border-blue-200 rounded-xl p-8 mb-12">
+              <div className="flex gap-4">
+                <AlertCircle className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+                <div>
+                  <h2 className="text-lg font-bold text-blue-900 mb-2">
+                    Important
+                  </h2>
+                  <p className="text-blue-800">
+                    Windows Defender SmartScreen may block Mover when you first run it. This is a security feature that warns about unrecognized software. The prompt will ask you to confirm you want to run the app.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Windows Steps */}
+            <div className="space-y-8">
+              {/* Step 1 */}
+              <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
+                <div className="flex gap-6">
+                  <div className="flex-shrink-0">
+                    <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-gradient-to-br from-purple-600 to-purple-700 text-white font-bold text-lg">
+                      1
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                      Download Mover Installer
+                    </h3>
+                    <p className="text-gray-700 mb-4">
+                      Download the Windows version of Mover from the{" "}
+                      <Link
+                        to="/downloads"
+                        className="text-purple-600 hover:text-purple-700 font-semibold"
+                      >
+                        Downloads page
+                      </Link>
+                      .
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Step 2 */}
+              <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
+                <div className="flex gap-6">
+                  <div className="flex-shrink-0">
+                    <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-gradient-to-br from-purple-600 to-purple-700 text-white font-bold text-lg">
+                      2
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                      Handle SmartScreen Warning
+                    </h3>
+                    <p className="text-gray-700 mb-4">
+                      When you run the installer, Windows Defender SmartScreen may appear with a warning message similar to the image below:
+                    </p>
+                    <p className="text-gray-700 mb-4">
+                      <strong>App:</strong> Mover-x.x.x-Setup.exe<br />
+                      <strong>Publisher:</strong> Unknown publisher
+                    </p>
+                    <p className="text-gray-700 mb-4">
+                      This is expected. Click <span className="font-semibold">Run anyway</span> to proceed with the installation.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Step 3 */}
+              <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
+                <div className="flex gap-6">
+                  <div className="flex-shrink-0">
+                    <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-gradient-to-br from-purple-600 to-purple-700 text-white font-bold text-lg">
+                      3
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                      Follow Installation Steps
+                    </h3>
+                    <p className="text-gray-700 mb-4">
+                      After clicking "Run anyway," the installer will launch. Follow the on-screen prompts to:
+                    </p>
+                    <ul className="space-y-2 ml-4">
+                      <li className="flex gap-3">
+                        <span className="text-purple-600 font-bold">•</span>
+                        <span className="text-gray-700">Accept the license agreement</span>
+                      </li>
+                      <li className="flex gap-3">
+                        <span className="text-purple-600 font-bold">•</span>
+                        <span className="text-gray-700">Choose installation location</span>
+                      </li>
+                      <li className="flex gap-3">
+                        <span className="text-purple-600 font-bold">•</span>
+                        <span className="text-gray-700">Complete the installation</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              {/* Step 4 */}
+              <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
+                <div className="flex gap-6">
+                  <div className="flex-shrink-0">
+                    <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-gradient-to-br from-purple-600 to-purple-700 text-white font-bold text-lg">
+                      4
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                      Launch and Configure
+                    </h3>
+                    <p className="text-gray-700 mb-4">
+                      After installation completes, launch Mover from your Start menu or desktop shortcut. The application will start with default settings, but you can customize:
+                    </p>
+                    <ul className="space-y-2 ml-4">
+                      <li className="flex gap-3">
+                        <span className="text-purple-600 font-bold">•</span>
+                        <span className="text-gray-700">Movement pattern (circular, random, figure-8, etc.)</span>
+                      </li>
+                      <li className="flex gap-3">
+                        <span className="text-purple-600 font-bold">•</span>
+                        <span className="text-gray-700">Movement interval (how often the cursor moves)</span>
+                      </li>
+                      <li className="flex gap-3">
+                        <span className="text-purple-600 font-bold">•</span>
+                        <span className="text-gray-700">Movement distance (how far the cursor travels)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Windows Troubleshooting */}
+            <div className="mt-12 bg-purple-50 rounded-xl p-8 border border-purple-200">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                Windows Troubleshooting
+              </h3>
+              <div className="space-y-6">
+                <div>
+                  <h4 className="text-lg font-bold text-gray-900 mb-2">
+                    SmartScreen blocked the installer
+                  </h4>
+                  <p className="text-gray-700 mb-3">
+                    If SmartScreen is blocking the installer, you'll see a message like "Windows protected your PC." To proceed:
+                  </p>
+                  <ol className="list-decimal list-inside space-y-2 text-gray-700 ml-2">
+                    <li>Click "More info"</li>
+                    <li>Click "Run anyway"</li>
+                  </ol>
+                </div>
+
+                <div>
+                  <h4 className="text-lg font-bold text-gray-900 mb-2">
+                    Antivirus is blocking Mover
+                  </h4>
+                  <p className="text-gray-700">
+                    Some antivirus programs may flag Mover as suspicious because it simulates mouse movements. This is a false positive. You may need to add Mover to your antivirus whitelist or exclusions. Check your antivirus documentation for instructions.
+                  </p>
+                </div>
+
+                <div>
+                  <h4 className="text-lg font-bold text-gray-900 mb-2">
+                    Mover isn't moving the mouse
+                  </h4>
+                  <p className="text-gray-700 mb-3">
+                    Try these troubleshooting steps:
+                  </p>
+                  <ul className="space-y-2 ml-4">
+                    <li className="flex gap-3">
+                      <span className="text-purple-600 font-bold">•</span>
+                      <span className="text-gray-700">Make sure Mover is running (check system tray)</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-purple-600 font-bold">•</span>
+                      <span className="text-gray-700">Verify it's not paused</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-purple-600 font-bold">•</span>
+                      <span className="text-gray-700">Ensure the interval setting isn't too long</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-purple-600 font-bold">•</span>
+                      <span className="text-gray-700">Try restarting Mover</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Help Section */}
           <div className="mt-16 bg-blue-50 rounded-xl p-8 border border-blue-200">
             <h2 className="text-xl font-bold text-gray-900 mb-4">
@@ -274,7 +472,7 @@ export default function MacOSInstructions() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="mailto:support@usemover.com"
+                href="mailto:i.am.unknownco@gmail.com"
                 className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white px-6 py-3 rounded-lg font-semibold transition-all"
               >
                 Contact Support
