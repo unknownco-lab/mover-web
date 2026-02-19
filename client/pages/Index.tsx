@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Index() {
   const stripeCheckoutUrl =
-    "https://buy.stripe.com/test_5kQ8wP5ZwgNm1e2eUe5Vu00";
+    "https://buy.stripe.com/5kQ14ngFzbTrdxfggwao801";
 
   return (
     <div className="min-h-screen bg-white">
