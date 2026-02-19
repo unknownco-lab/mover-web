@@ -1,40 +1,12 @@
-import { ArrowRight, CheckCircle, AlertCircle } from "lucide-react";
+import { ArrowRight, AlertCircle } from "lucide-react";
 import { Link } from "react-router-dom";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 
 export default function MacOSInstructions() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Header/Navigation */}
-      <header className="sticky top-0 z-50 bg-white border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-          <Link
-            to="/"
-            className="flex items-center gap-2 hover:opacity-80 transition"
-          >
-            <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">M</span>
-            </div>
-            <span className="text-xl font-bold text-gray-900">Mover</span>
-          </Link>
-          <nav className="hidden md:flex items-center gap-8">
-            <Link
-              to="/"
-              className="text-gray-700 hover:text-purple-600 transition"
-            >
-              Home
-            </Link>
-            <Link
-              to="/downloads"
-              className="text-gray-700 hover:text-purple-600 transition"
-            >
-              Downloads
-            </Link>
-            <Link to="/faq" className="text-gray-700 hover:text-purple-600 transition">
-              FAQ
-            </Link>
-          </nav>
-        </div>
-      </header>
+      <Header />
 
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-white via-purple-50 to-white pt-20 pb-16 px-4 sm:px-6 lg:px-8">
@@ -295,88 +267,7 @@ export default function MacOSInstructions() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-gray-400 py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <div className="flex items-center gap-2 mb-4">
-                <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-lg">M</span>
-                </div>
-                <span className="text-xl font-bold text-white">Mover</span>
-              </div>
-              <p className="text-sm">
-                Keep your system active with intelligent movement.
-              </p>
-            </div>
-            <div>
-              <h4 className="text-white font-semibold mb-4">Product</h4>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <Link to="/" className="hover:text-purple-400 transition">
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <a
-                    href="/#features"
-                    className="hover:text-purple-400 transition"
-                  >
-                    Features
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-white font-semibold mb-4">Support</h4>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <a
-                    href="mailto:support@usemover.com"
-                    className="hover:text-purple-400 transition"
-                  >
-                    Email Support
-                  </a>
-                </li>
-                <li>
-                  <Link to="/faq" className="hover:text-purple-400 transition">
-                    FAQ
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/downloads"
-                    className="hover:text-purple-400 transition"
-                  >
-                    Downloads
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-white font-semibold mb-4">Legal</h4>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <Link
-                    to="/terms"
-                    className="hover:text-purple-400 transition"
-                  >
-                    Terms of Service
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="border-t border-gray-800 pt-8">
-            <p className="text-center text-sm text-gray-500">
-              © 2026 Mover. All rights reserved. | Made with{" "}
-              <span className="text-purple-400">♥</span>
-            </p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
