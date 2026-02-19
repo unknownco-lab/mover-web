@@ -13,13 +13,13 @@ export default function Downloads() {
       icon: Apple,
       url: "https://github.com/unknownco-lab/mover-web/releases/download/v2.0.14/Mover-2.0.14-x64.dmg",
     },
-    {
-      id: "mac-silicon",
-      label: "Mac Silicon (M1/M2/M3)",
-      description: "For Apple Silicon Macs",
-      icon: Cpu,
-      url: "https://github.com/unknownco-lab/mover-web/releases/download/v2.0.14/Mover-2.0.14-arm64.dmg",
-    },
+    // {
+    //   id: "mac-silicon",
+    //   label: "Mac Silicon (M1/M2/M3)",
+    //   description: "For Apple Silicon Macs",
+    //   icon: Cpu,
+    //   url: "https://github.com/unknownco-lab/mover-web/releases/download/v2.0.14/Mover-2.0.14-arm64.dmg",
+    // },
     {
       id: "windows",
       label: "Windows",
@@ -56,7 +56,7 @@ export default function Downloads() {
       {/* Downloads Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             {downloads.map((download) => {
               const IconComponent = download.icon;
               return (
@@ -64,7 +64,7 @@ export default function Downloads() {
                   key={download.id}
                   className="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow border border-gray-100 flex flex-col"
                 >
-                  <div className="mb-6">
+                  <div className="mb-6 flex flex-col items-center justify-center">
                     <div className="w-16 h-16 bg-gradient-to-br from-purple-100 to-purple-50 rounded-lg flex items-center justify-center mb-4">
                       <IconComponent className="w-8 h-8 text-purple-600" />
                     </div>

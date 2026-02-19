@@ -44,6 +44,31 @@ export default function MacOSInstructions() {
             </div>
           </div>
 
+          <div className="bg-amber-50 border border-amber-200 rounded-xl p-8 mb-12">
+            <div className="flex gap-4">
+              <AlertCircle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
+              <div>
+                <h2 className="text-lg font-bold text-amber-900 mb-2">
+                  Indie Developer App
+                </h2>
+                <p className="text-amber-800 mb-3">
+                  Mover is built by an indie developer. When you first launch the app, macOS may display a security prompt indicating the app is from an "unknown developer." This is normal for independently distributed applications and does not indicate any security issue with Mover.
+                </p>
+                <p className="text-amber-800">
+                  To learn how to allow Mover to run on your Mac, please see Apple's support guide:{" "}
+                  <a
+                    href="https://support.apple.com/guide/mac-help/open-a-mac-app-from-an-unknown-developer-mh40616/mac"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-semibold text-amber-900 hover:text-amber-950 underline"
+                  >
+                    Open a Mac app from an unknown developer
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+
           {/* Step-by-Step Instructions */}
           <div className="space-y-8">
             {/* Step 1 */}
