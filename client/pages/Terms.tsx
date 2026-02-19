@@ -524,10 +524,10 @@ export default function Terms() {
               <p>
                 <strong>Email:</strong>{" "}
                 <a
-                  href="mailto:i.am.unknownco@gmail.com"
+                  href="mailto:support@usemover.com"
                   className="text-purple-600 hover:text-purple-700"
                 >
-                  i.am.unknownco@gmail.com
+                  support@usemover.com
                 </a>
               </p>
             </div>
@@ -620,7 +620,7 @@ export default function Terms() {
               <ul className="space-y-2 text-sm">
                 <li>
                   <a
-                    href="mailto:i.am.unknownco@gmail.com"
+                    href="mailto:support@usemover.com"
                     className="hover:text-purple-400 transition"
                   >
                     Email Support

@@ -558,10 +558,10 @@ export default function FAQ() {
               <p className="text-gray-700 leading-relaxed">
                 Contact us at{" "}
                 <a
-                  href="mailto:i.am.unknownco@gmail.com"
+                  href="mailto:support@usemover.com"
                   className="text-purple-600 hover:text-purple-700"
                 >
-                  i.am.unknownco@gmail.com
+                  support@usemover.com
                 </a>{" "}
                 with your purchase email address, and we'll resend your license
                 key.
@@ -671,10 +671,10 @@ export default function FAQ() {
               <p className="text-gray-700 leading-relaxed">
                 Email us at{" "}
                 <a
-                  href="mailto:i.am.unknownco@gmail.com"
+                  href="mailto:support@usemover.com"
                   className="text-purple-600 hover:text-purple-700"
                 >
-                  i.am.unknownco@gmail.com
+                  support@usemover.com
                 </a>{" "}
                 with your question or issue. Include your license key and
                 operating system details for faster assistance.
@@ -698,10 +698,10 @@ export default function FAQ() {
               <p className="text-gray-700 leading-relaxed">
                 We love hearing from users! Email your suggestions to{" "}
                 <a
-                  href="mailto:i.am.unknownco@gmail.com"
+                  href="mailto:support@usemover.com"
                   className="text-purple-600 hover:text-purple-700"
                 >
-                  i.am.unknownco@gmail.com
+                  support@usemover.com
                 </a>{" "}
                 with "Feature Request" in the subject line.
               </p>
@@ -780,10 +780,10 @@ export default function FAQ() {
               <p className="text-gray-700 leading-relaxed mb-4">
                 If your question isn't answered here, please contact us at{" "}
                 <a
-                  href="mailto:i.am.unknownco@gmail.com"
+                  href="mailto:support@usemover.com"
                   className="text-purple-600 hover:text-purple-700 font-semibold"
                 >
-                  i.am.unknownco@gmail.com
+                  support@usemover.com
                 </a>
                 . We're happy to help!
               </p>
@@ -836,7 +836,7 @@ export default function FAQ() {
               <ul className="space-y-2 text-sm">
                 <li>
                   <a
-                    href="mailto:i.am.unknownco@gmail.com"
+                    href="mailto:support@usemover.com"
                     className="hover:text-purple-400 transition"
                   >
                     Email Support

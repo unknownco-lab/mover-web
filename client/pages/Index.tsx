@@ -35,6 +35,12 @@ export default function Index() {
             >
               Pricing
             </a>
+            <Link
+              to="/downloads"
+              className="text-gray-700 hover:text-purple-600 transition"
+            >
+              Downloads
+            </Link>
           </nav>
         </div>
       </header>
@@ -512,7 +518,7 @@ export default function Index() {
               <ul className="space-y-2 text-sm">
                 <li>
                   <a
-                    href="mailto:i.am.unknownco@gmail.com"
+                    href="mailto:support@usemover.com"
                     className="hover:text-purple-400 transition"
                   >
                     Email Support
@@ -522,6 +528,14 @@ export default function Index() {
                   <a href="/faq" className="hover:text-purple-400 transition">
                     FAQ
                   </a>
+                </li>
+                <li>
+                  <Link
+                    to="/downloads"
+                    className="hover:text-purple-400 transition"
+                  >
+                    Downloads
+                  </Link>
                 </li>
               </ul>
             </div>

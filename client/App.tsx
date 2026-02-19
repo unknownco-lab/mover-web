@@ -10,6 +10,8 @@ import Index from "./pages/Index";
 import Terms from "./pages/Terms";
 import FAQ from "./pages/FAQ";
 import NotFound from "./pages/NotFound";
+import Downloads from "./pages/Downloads";
+import MacOSInstructions from "./pages/MacOSInstructions";
 
 const queryClient = new QueryClient();
 
@@ -34,7 +36,9 @@ export const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/faq" element={<FAQ />} />
+          <Route path="/downloads" element={<Downloads />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="/macos-instructions" element={<MacOSInstructions />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
