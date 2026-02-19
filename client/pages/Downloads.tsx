@@ -8,8 +8,8 @@ export default function Downloads() {
   const downloads = [
     {
       id: "mac-intel",
-      label: "Mac Intel",
-      description: "For Intel-based Mac computers",
+      label: "MacOS",
+      description: "For MacOS computers",
       icon: Apple,
       url: "https://github.com/unknownco-lab/mover-web/releases/download/v2.0.14/Mover-2.0.14-x64.dmg",
     },
@@ -22,7 +22,7 @@ export default function Downloads() {
     // },
     {
       id: "windows",
-      label: "Windows",
+      label: "Windows PC",
       description: "For Windows 10 and later",
       icon: Monitor,
       url: "https://github.com/unknownco-lab/mover-web/releases/download/v2.0.14/Mover-2.0.14.Setup.exe",
