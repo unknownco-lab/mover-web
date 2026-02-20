@@ -11,7 +11,7 @@ export default function Downloads() {
       label: "MacOS",
       description: "For MacOS computers",
       icon: Apple,
-      url: "https://github.com/unknownco-lab/mover-web/releases/download/v2.0.17/Mover-2.0.17-x64.dmg",
+      url: "https://github.com/unknownco-lab/mover-web/releases/download/v2.0.18/Mover-2.0.18-x64.dmg",
     },
     // {
     //   id: "mac-silicon",
@@ -25,7 +25,7 @@ export default function Downloads() {
       label: "Windows PC",
       description: "For Windows 10 and later",
       icon: Monitor,
-      url: "https://github.com/unknownco-lab/mover-web/releases/download/v2.0.17/Mover-2.0.17.Setup.exe",
+      url: "https://github.com/unknownco-lab/mover-web/releases/download/v2.0.18/Mover-2.0.18.Setup.exe",
     },
   ];
 
