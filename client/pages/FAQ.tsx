@@ -524,7 +524,7 @@ export default function FAQ() {
                 What is your refund policy?
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                We offer refunds within 14 days of purchase if the software
+                We offer refunds within 30 days of purchase if the software
                 fails to function as described due to technical issues. Refunds
                 are not available for user error, policy violations, workplace
                 consequences, or buyer's remorse. See our Terms of Service for
@@ -539,10 +539,10 @@ export default function FAQ() {
               <p className="text-gray-700 leading-relaxed">
                 Contact us at{" "}
                 <a
-                  href="mailto:support@usemover.com"
+                  href="mailto:support@usemover.app"
                   className="text-purple-600 hover:text-purple-700"
                 >
-                  support@usemover.com
+                  support@usemover.app
                 </a>{" "}
                 with your purchase email address, and we'll resend your license
                 key.
@@ -652,10 +652,10 @@ export default function FAQ() {
               <p className="text-gray-700 leading-relaxed">
                 Email us at{" "}
                 <a
-                  href="mailto:support@usemover.com"
+                  href="mailto:support@usemover.app"
                   className="text-purple-600 hover:text-purple-700"
                 >
-                  support@usemover.com
+                  support@usemover.app
                 </a>{" "}
                 with your question or issue. Include your license key and
                 operating system details for faster assistance.
@@ -679,10 +679,10 @@ export default function FAQ() {
               <p className="text-gray-700 leading-relaxed">
                 We love hearing from users! Email your suggestions to{" "}
                 <a
-                  href="mailto:support@usemover.com"
+                  href="mailto:support@usemover.app"
                   className="text-purple-600 hover:text-purple-700"
                 >
-                  support@usemover.com
+                  support@usemover.app
                 </a>{" "}
                 with "Feature Request" in the subject line.
               </p>
@@ -761,10 +761,10 @@ export default function FAQ() {
               <p className="text-gray-700 leading-relaxed mb-4">
                 If your question isn't answered here, please contact us at{" "}
                 <a
-                  href="mailto:support@usemover.com"
+                  href="mailto:support@usemover.app"
                   className="text-purple-600 hover:text-purple-700 font-semibold"
                 >
-                  support@usemover.com
+                  support@usemover.app
                 </a>
                 . We're happy to help!
               </p>

@@ -242,7 +242,6 @@ export default function Terms() {
                 Payment is processed through secure third-party payment
                 processors
               </li>
-              <li>All sales are final</li>
             </ul>
 
             <h3 className="text-xl font-semibold text-gray-800 mb-3">
@@ -250,7 +249,7 @@ export default function Terms() {
             </h3>
             <ul className="list-disc list-inside space-y-2 text-gray-700 ml-2">
               <li>
-                Refunds may be issued at our sole discretion within 14 days of
+                Refunds may be issued at our sole discretion within 30 days of
                 purchase
               </li>
               <li>
@@ -505,10 +504,10 @@ export default function Terms() {
               <p>
                 <strong>Email:</strong>{" "}
                 <a
-                  href="mailto:support@usemover.com"
+                  href="mailto:support@usemover.app"
                   className="text-purple-600 hover:text-purple-700"
                 >
-                  support@usemover.com
+                  support@usemover.app
                 </a>
               </p>
             </div>
